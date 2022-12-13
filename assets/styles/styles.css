@@ -56,13 +56,20 @@ img {
     padding: 7.9375rem 0;
 }
 
+@media (min-width: 1024px) {
+    .fylo {
+        padding: 0;
+    }
+}
+
 .fylo__container {
-    width: min(calc(100% - 3rem), 57.5rem);
+    width: calc(100% - 3rem);
     margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
     .fylo__container {
+        width: auto;
         display: grid;
         grid-template-columns: repeat(2, max-content);
         align-items: flex-end;
